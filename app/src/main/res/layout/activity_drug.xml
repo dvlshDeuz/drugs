@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.DrugActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="122dp"
+            app:srcCompat="@drawable/vector_stroke"
+            android:contentDescription="@string/add_in_favorite" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="122dp"
+            app:srcCompat="@drawable/vector_icon"
+            android:contentDescription="@string/info_icon" />
+
+        <ImageView
+            android:layout_width="117dp"
+            android:layout_height="183dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="120dp"
+            app:srcCompat="@drawable/image4"
+            android:contentDescription="@string/product_image" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvDrugTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/example_title"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDrugDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/example_description"
+        android:textColor="@color/grey"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvDrugTitle" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="14dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/buy_location"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:icon="@drawable/vector"
+        app:iconGravity="textStart"
+        app:iconTint="@color/green" />
+
+</LinearLayout>
